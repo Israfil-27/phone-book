@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Book</title>
+    <link rel="stylesheet" href="./scss/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <form action="">
+          <div>
+            <label for="">Name</label>
+            <input id="name" type="text" />
+          </div>
+          <div>
+            <label for="">Surname</label>
+            <input id="surname" type="text" />
+          </div>
+          <div>
+            <label for="">Phone</label>
+            <input id="tel" type="tel" />
+          </div>
+          <div>
+            <label for="">Email</label>
+            <input id="email" type="email" />
+          </div>
+          <button type="submit" id="save-button">Save</button>
+          <button type="button" id="edit-edit">edit</button>
+          <button type="button" id="x">X</button>
+        </form>
+      </div>
+      <div class="users-list">
+       <div class="search"><span>Search</span><input type="search" id="search"></div> 
+        <table id="customers">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Surname</th>
+              <th>Phone Number</th>
+              <th>Email</th>
+              <th>Controls</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+                      <td>Israfil</td>
+                      <td>Veliyev</td>
+                      <td>+994709460246</td>
+                      <td>Israfik666@gmail.com</td>
+                      <td><button>Remove</button> <button class="edit">edit</button></td>
+                </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./script/index.js"></script>
+    <!-- <script src="./script/js.js"></script> -->
+  </body>
+</html>
