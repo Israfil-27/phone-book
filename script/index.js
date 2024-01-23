@@ -20,6 +20,24 @@ saveBtn.addEventListener("click",(e)=>{
 
 function newUser() {
     // dom - dan gələn (name.value)-sunu göturəm yeni array yaradiram ve (userdataobj əlavə edirəm) (trim())- funksiyasi (istifadəci tərəfindən göndərilən bosluqlari doldurur)
+    if (name.value.length == 0) {
+        alert("name bolmesini doldur")
+        return
+    }
+    else 
+    if (surname.value.length == 0) {
+        alert("Surname bolmesini doldur")
+        return
+    }
+    if (tel.value.length == 0) {
+        alert("Tel bolmesini doldur")
+        return
+    }
+    if (email.value.length == 0) {
+        alert("Email bolmesini doldur")
+        return
+    }
+    
    let user={
     name:name.value.trim(),
     surname:surname.value.trim(),
